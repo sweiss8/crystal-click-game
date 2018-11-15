@@ -7,25 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+
     
 </head>
 <body>
 
     <h1>Stuart's Crystal Game</h1>
     <div class="instructions">
-        <h2>Instructions:</h2>
-        <p>Here are the instructions!</p>
+        <h2><strong><u>Instructions:</u></strong></h2>
+        <br>
+        <p>Click the crystals to try to match the "Goal" number, without going over.</p>
+        <br>
+        <p>Difficulty levels:
+            <br>
+            <ul>
+                <li>Easy - Goal number 100-150.</li>
+                <li>Medium - Goal number 50-100</li>
+                <li>Hard - Goal number 20-50</li>
+            </ul>
+        </p>
+
     </div>
+    <div class="difficulty">
+        <button class="difficultyButton selected" id="easyButton">Easy</button>
+        <button class="difficultyButton" id="medButton">Medium</button>
+        <button class="difficultyButton" id="hardButton">Hard</button>
+    </div>
+    <div class="start">
+        <button class="startButton">Start</button>
+    </div>
+
     <div class="scoreboard">
         <div class="magicnumber">
-            <h2>Goal: <span id="goalNumber"></span></h2>
+            <h2>Goal:</h2>
+            <span id="goalNumber"></span>
         </div>
         <div>
-            <h3 class="currentScore">Current Score: <span id="currentScore"></span></h3> 
+            <h3 class="currentScore">Current Score: <span id="currentScore"></span> </h3>
         </div>
         <div class="score">
-            <h3 class="wins">Wins:</h3>
+            <h3 class="wins">Wins: </h3>
+            <span id="wins"></span>
             <h3 class="losses">Losses:</h3>
+            <span id="losses"></span>
         </div>
     </div>
 
